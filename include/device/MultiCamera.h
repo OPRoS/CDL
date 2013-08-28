@@ -1,4 +1,4 @@
-#ifndef	_MULTI_CAMERA_H_
+﻿#ifndef	_MULTI_CAMERA_H_
 #define	_MULTI_CAMERA_H_
 
 #include "Camera.h"

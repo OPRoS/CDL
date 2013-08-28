@@ -1,4 +1,4 @@
-set (CDL_NAME OPRoSCDL)
+﻿set (CDL_NAME OPRoSCDL)
 cmake_minimum_required(VERSION 2.6)
 PROJECT(${CDL_NAME})
 

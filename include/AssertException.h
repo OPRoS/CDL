@@ -1,4 +1,4 @@
-/*
+﻿/*
  * AssertException.h
  *
  *  Created on: 2008. 9. 29

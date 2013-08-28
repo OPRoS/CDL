@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  * OPRoS Component Engine (OCE)
  * Copyright (c) 2008 ETRI. http://www.etri.re.kr.
  * Distributed under the OPRoS License, Version 1.0.
@@ -31,7 +31,7 @@ typedef pthread_mutexattr_t OSMutexAttr;
 #endif
 
 /**
-	¹ÂÅØ½º °ü·Ã ÇÔ¼ö ·¡ÇÎ Å¬·¡½º.
+	ë®¤í…ìŠ¤ ê´€ë ¨ í•¨ìˆ˜ ë˜í•‘ í´ë˜ìŠ¤.
 */
 class OSMutex : public OSSync
 {

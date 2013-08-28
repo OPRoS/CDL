@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  *  OPRoS Component Engine (OCE)
  *  Copyright (c) 2008 ETRI. http://www.etri.re.kr.
  *  Distributed under the OPRoS License, Version 1.0.
@@ -18,7 +18,7 @@
 #include <EventPort.h>
 #include <RemoteEventPort.h>
 /*
- * ConnectionÀº ÇÏ³ª·Î ÇÏ°í Eventport ÀÚÃ¼¸¦ remote¿Í local·Î ÇÔ
+ * Connectionì€ í•˜ë‚˜ë¡œ í•˜ê³  Eventport ìì²´ë¥¼ remoteì™€ localë¡œ í•¨
  */
 
 class IEventPortLink {

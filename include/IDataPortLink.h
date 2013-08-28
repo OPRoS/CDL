@@ -1,4 +1,4 @@
-//
+ï»¿//
 // #LICENSE#
 //
 //
@@ -17,7 +17,7 @@
 #include <DataPort.h>
 #include <RemoteDataPort.h>
 /*
- * ConnectionÀº ÇÏ³ª·Î ÇÏ°í Dataport ÀÚÃ¼¸¦ remote¿Í local·Î ÇÔ
+ * Connectionì€ í•˜ë‚˜ë¡œ í•˜ê³  Dataport ìì²´ë¥¼ remoteì™€ localë¡œ í•¨
  */
 
 

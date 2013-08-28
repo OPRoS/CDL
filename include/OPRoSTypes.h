@@ -1,4 +1,4 @@
-#if !defined(_OPROSTYPES_H)
+﻿#if !defined(_OPROSTYPES_H)
 #define _OPROSTYPES_H
 #include <AssertException.h>
 

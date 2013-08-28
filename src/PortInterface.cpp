@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  *  OPRoS Component Engine (OCE)
  *  Copyright (c) 2008 ETRI. http://www.etri.re.kr.
  *  Distributed under the OPRoS License, Version 1.0.
@@ -41,7 +41,7 @@ public:
 			for (port_base::iterator d_it = m_data_ports.begin(); d_it
 					!= m_data_ports.end(); ++d_it) {
 				//Port *ds_port = d_it->second;
-				//delete ds_port;  // º¸Åë port °¡ heap alloc ÇÏÁö ¾ÊÀ¸¹Ç·Î
+				//delete ds_port;  // ë³´í†µ port ê°€ heap alloc í•˜ì§€ ì•Šìœ¼ë¯€ë¡œ
 			}
 			m_data_ports.clear();
 		}

@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  *  OPRoS Component Engine (OCE)
  *  Copyright (c) 2008 ETRI. http://www.etri.re.kr.
  *  Distributed under the OPRoS License, Version 1.0.
@@ -29,20 +29,20 @@ enum ReturnType {
 	OPROS_OUT_OF_RESOURCES=408,
 	OPROS_VERSION_MISMATCH=505,
 
-	OPROS_DESTORY_ERROR				= 0x10000000,	//	º¹±¸ÇÒ ¼ö ¾ø´Â ¿¡·¯
-	OPROS_FIND_DLL_ERROR			= 0x10000001,	//	DLL ÆÄÀÏÀ» Ã£À» ¼ö ¾ø´Â °æ¿ì
-	OPROS_LOAD_DLL_ERROR			= 0x10000002,	//	DLL¿¡¼­ Á¦°øÇÏ´Â ÀÎÅÍÆäÀÌ½º¸¦ ·ÎµåÇÒ ¼ö ¾ø´Â °æ¿ì
-	OPROS_FIND_PROPERTY_ERROR		= 0x10000003,	//	ÄÄÆ÷³ÍÆ®¿¡¼­ ÇÊ¿ä·Î ÇÏ´Â ÆÄ¶ó¹ÌÅÍ¸¦ Ã£À» ¼ö ¾ø´Â °æ¿ì
+	OPROS_DESTORY_ERROR				= 0x10000000,	//	ë³µêµ¬í•  ìˆ˜ ì—†ëŠ” ì—ëŸ¬
+	OPROS_FIND_DLL_ERROR			= 0x10000001,	//	DLL íŒŒì¼ì„ ì°¾ì„ ìˆ˜ ì—†ëŠ” ê²½ìš°
+	OPROS_LOAD_DLL_ERROR			= 0x10000002,	//	DLLì—ì„œ ì œê³µí•˜ëŠ” ì¸í„°íŽ˜ì´ìŠ¤ë¥¼ ë¡œë“œí•  ìˆ˜ ì—†ëŠ” ê²½ìš°
+	OPROS_FIND_PROPERTY_ERROR		= 0x10000003,	//	ì»´í¬ë„ŒíŠ¸ì—ì„œ í•„ìš”ë¡œ í•˜ëŠ” íŒŒë¼ë¯¸í„°ë¥¼ ì°¾ì„ ìˆ˜ ì—†ëŠ” ê²½ìš°
 	
-	OPROS_INITIALIZE_API_ERROR		= 0x10000100,	//	API¸¦ ÃÊ±âÈ­ ½ÃÅ°´Â µµÁß ¿¡·¯°¡ ¹ß»ýÇÑ °æ¿ì
-	OPROS_FINALIZE_API_ERROR		= 0x10000101,	//	API¸¦ Á¾·á ½ÃÅ°´Â µµÁß ¿¡·¯°¡ ¹ß»ýÇÑ °æ¿ì
-	OPROS_RESET_API_ERROR			= 0x10000102,	//	API¸¦ Àç±âµ¿ ½ÃÅ°´Â µµÁß ¿¡·¯°¡ ¹ß»ýÇÑ °æ¿ì
-	OPROS_RECOVER_API_ERROR			= 0x10000103,	//	API¸¦ º¹±¸½ÃÅ°´Â µµÁß ¿¡·¯°¡ ¹ß»ýÇÑ °æ¿ì
+	OPROS_INITIALIZE_API_ERROR		= 0x10000100,	//	APIë¥¼ ì´ˆê¸°í™” ì‹œí‚¤ëŠ” ë„ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí•œ ê²½ìš°
+	OPROS_FINALIZE_API_ERROR		= 0x10000101,	//	APIë¥¼ ì¢…ë£Œ ì‹œí‚¤ëŠ” ë„ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí•œ ê²½ìš°
+	OPROS_RESET_API_ERROR			= 0x10000102,	//	APIë¥¼ ìž¬ê¸°ë™ ì‹œí‚¤ëŠ” ë„ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí•œ ê²½ìš°
+	OPROS_RECOVER_API_ERROR			= 0x10000103,	//	APIë¥¼ ë³µêµ¬ì‹œí‚¤ëŠ” ë„ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí•œ ê²½ìš°
 	
-	OPROS_RECOVER_ERROR				= 0x20000000,	//	º¹±¸ÇÒ ¼ö ÀÖ´Â ¿¡·¯
-	OPROS_ENABLE_API_ERROR			= 0x20000100,	//	API¸¦ È°¼ºÈ­ ½ÃÅ°´Â µµÁß ¿¡·¯°¡ ¹ß»ýÇÑ °æ¿ì
-	OPROS_DISABLE_API_ERROR			= 0x20000101,	//	API¸¦ ºñÈ°¼ºÈ­ ½ÃÅ°´Â µµÁß ¿¡·¯°¡ ¹ß»ýÇÑ °æ¿ì
-	OPROS_CALL_API_ERROR			= 0x20000102,	//	APIÀÇ ÀÎÅÍÆäÀÌ½º¸¦ È£ÃâÇÏ´Â µµÁß ¿¡·¯°¡ ¹ß»ýÇÑ °æ¿ì
+	OPROS_RECOVER_ERROR				= 0x20000000,	//	ë³µêµ¬í•  ìˆ˜ ìžˆëŠ” ì—ëŸ¬
+	OPROS_ENABLE_API_ERROR			= 0x20000100,	//	APIë¥¼ í™œì„±í™” ì‹œí‚¤ëŠ” ë„ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí•œ ê²½ìš°
+	OPROS_DISABLE_API_ERROR			= 0x20000101,	//	APIë¥¼ ë¹„í™œì„±í™” ì‹œí‚¤ëŠ” ë„ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí•œ ê²½ìš°
+	OPROS_CALL_API_ERROR			= 0x20000102,	//	APIì˜ ì¸í„°íŽ˜ì´ìŠ¤ë¥¼ í˜¸ì¶œí•˜ëŠ” ë„ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí•œ ê²½ìš°
 };
 
 #endif /* RETURNTYPE_H_ */

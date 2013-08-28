@@ -1,4 +1,4 @@
-#ifndef _OPRoSVersion_H
+﻿#ifndef _OPRoSVersion_H
 #define _OPRoSVersion_H
 
 char *get_opros_version();

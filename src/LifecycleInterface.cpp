@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  *  OPRoS Component Engine (OCE)
  *  Copyright (c) 2008 ETRI. http://www.etri.re.kr.
  *  Distributed under the OPRoS License, Version 1.0.
@@ -51,7 +51,7 @@ ReturnType LifecycleInterfaceImpl::initialize()
 		return OPROS_SUCCESS;
 	}
 
-	// CREATE »óÅÂ°¡ ¾Æ´Ï¸é initialize() ÇÔ¼ö¸¦ È£ÃâÇÒ ¼ö ¾øÀ½ (SPEC V1.0ÂüÁ¶)
+	// CREATE ìƒíƒœê°€ ì•„ë‹ˆë©´ initialize() í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•  ìˆ˜ ì—†ìŒ (SPEC V1.0ì°¸ì¡°)
 	if(m_state != OPROS_CS_CREATED) {
 		m_last_ret = OPROS_PRECONDITION_NOT_MET;
 		return OPROS_PRECONDITION_NOT_MET;
@@ -75,13 +75,13 @@ ReturnType LifecycleInterfaceImpl::start()
 
 	// TODO : guard(mutex)
 
-	//ÀÌ¹Ì ACTIVE »óÅÂÀÌ¸é ¸®ÅÏ
+	//ì´ë¯¸ ACTIVE ìƒíƒœì´ë©´ ë¦¬í„´
 	if (m_state == OPROS_CS_ACTIVE) {
 		m_last_ret = OPROS_SUCCESS;
 		return OPROS_SUCCESS;
 	}
 
-	// READY, INACTIVE »óÅÂ¿¡¼­¸¸ È£Ãâ °¡´É
+	// READY, INACTIVE ìƒíƒœì—ì„œë§Œ í˜¸ì¶œ ê°€ëŠ¥
 	if (m_state != OPROS_CS_READY && m_state != OPROS_CS_INACTIVE) {
 		m_last_ret = OPROS_PRECONDITION_NOT_MET;		
 		return OPROS_PRECONDITION_NOT_MET;
@@ -103,13 +103,13 @@ ReturnType LifecycleInterfaceImpl::start()
 
 ReturnType LifecycleInterfaceImpl::stop()
 {
-	// ÀÌ¹Ì INACTIVE »óÅÂÀÌ¸é ¸®ÅÏ
+	// ì´ë¯¸ INACTIVE ìƒíƒœì´ë©´ ë¦¬í„´
 	if (m_state == OPROS_CS_INACTIVE) {
 		m_last_ret = OPROS_SUCCESS;
 		return OPROS_SUCCESS;
 	}
 
-	// ACTIVE »óÅÂÀÎ °æ¿ì¸¸ stop() È£Ãâ °¡´É
+	// ACTIVE ìƒíƒœì¸ ê²½ìš°ë§Œ stop() í˜¸ì¶œ ê°€ëŠ¥
 	if (m_state != OPROS_CS_ACTIVE) {
 		m_last_ret = OPROS_PRECONDITION_NOT_MET;		
 		return OPROS_PRECONDITION_NOT_MET;
@@ -143,13 +143,13 @@ ReturnType LifecycleInterfaceImpl::stop()
 
 ReturnType LifecycleInterfaceImpl::destroy()
 {
-	// ÀÌ¹Ì DESTROYED »óÅÂÀÌ¸é ¸®ÅÏ
+	// ì´ë¯¸ DESTROYED ìƒíƒœì´ë©´ ë¦¬í„´
 	if (m_state == OPROS_CS_DESTROYED) {
 		m_last_ret = OPROS_SUCCESS;
 		return OPROS_SUCCESS;
 	}
 
-	// ACTIVE, ERROR, INACTIVE »óÅÂÀÎ °æ¿ì¸¸ stop() È£Ãâ °¡´É
+	// ACTIVE, ERROR, INACTIVE ìƒíƒœì¸ ê²½ìš°ë§Œ stop() í˜¸ì¶œ ê°€ëŠ¥
 	if (m_state != OPROS_CS_READY && m_state != OPROS_CS_ACTIVE && m_state != OPROS_CS_INACTIVE && m_state != OPROS_CS_ERROR) {
 		m_last_ret = OPROS_PRECONDITION_NOT_MET;
 		return OPROS_PRECONDITION_NOT_MET;
@@ -209,7 +209,7 @@ ReturnType LifecycleInterfaceImpl::stopOnError()
 		return OPROS_SUCCESS;
 	}
 
-	// ACTIVE »óÅÂÀÏ¶§¸¸ È£Ãâ °¡´É
+	// ACTIVE ìƒíƒœì¼ë•Œë§Œ í˜¸ì¶œ ê°€ëŠ¥
 	if (m_state != OPROS_CS_ACTIVE) {
 		return OPROS_PRECONDITION_NOT_MET;
 	}
@@ -230,7 +230,7 @@ ReturnType LifecycleInterfaceImpl::recover()
 {
 	ReturnType ret;
 
-	// ERROR »óÅÂÀÏ¶§¸¸ È£Ãâ °¡´É
+	// ERROR ìƒíƒœì¼ë•Œë§Œ í˜¸ì¶œ ê°€ëŠ¥
 	if (m_state != OPROS_CS_ERROR) {
 		return OPROS_PRECONDITION_NOT_MET;
 	}

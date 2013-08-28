@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  * OPRoS Component Engine (OCE)
  * Copyright (c) 2008 ETRI. http://www.etri.re.kr.
  * Distributed under the OPRoS License, Version 1.0.
@@ -17,7 +17,7 @@
 #include "OSSync.h"
 
 /**
-	ºí·° ´ÜÀ§ ¶ôÅ·/ÇØÁ¦¸¦ ¼öÇàÇÏ´Â guard ±¸Çö Å¬·¡½º.
+	ë¸”ëŸ­ ë‹¨ìœ„ ë½í‚¹/í•´ì œë¥¼ ìˆ˜í–‰í•˜ëŠ” guard êµ¬í˜„ í´ë˜ìŠ¤.
 */
 class OSGuard
 {

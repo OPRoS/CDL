@@ -1,4 +1,4 @@
-//#include <TServicePortInterface.h>
+﻿//#include <TServicePortInterface.h>
 #include <assert.h>
 #include "SymbolServicePortProvider.h"
 #include <sstream>

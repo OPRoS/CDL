@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  * OPRoS Component Engine (OCE)
  * Copyright (c) 2008 ETRI. http://www.etri.re.kr.
  * Distributed under the OPRoS License, Version 1.0.
@@ -409,7 +409,7 @@ std::string wstring_to_utf8(const std::wstring &str)
 	return UncodeStrToUTF8Str(str.c_str(), (int)str.size());
 }
 
-// 2012.07.09 wstring Á÷·ÄÈ­ÄÚµå Ãß°¡ÇÔ
+// 2012.07.09 wstring ì§ë ¬í™”ì½”ë“œ ì¶”ê°€í•¨
 
 void save_this(opros::archive::oarchive &ar, std::wstring &t)
 {

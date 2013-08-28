@@ -1,4 +1,4 @@
-#ifndef	_SPEECH_H_
+﻿#ifndef	_SPEECH_H_
 #define	_SPEECH_H_
 
 #include "OprosApi.h"
